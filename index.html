@@ -26,9 +26,9 @@
     .typing{font-size:1.2rem;height:30px;border-right:3px solid var(--primary);display:inline-block;padding-right:5px}
     
     .avatar-section{padding:60px 8%;display:flex;justify-content:center;margin-bottom:-40px}
-    .avatar-container{width:200px;height:200px;border-radius:50%;overflow:hidden;border:5px solid var(--primary);box-shadow:0 10px 40px rgba(122,92,255,0.4);transition:transform 0.3s}
+    .avatar-container{width:200px;height:200px;border-radius:50%;overflow:hidden;border:5px solid var(--primary);box-shadow:0 10px 40px rgba(122,92,255,0.4);transition:transform 0.3s;display:flex;align-items:center;justify-content:center;background:var(--card)}
     .avatar-container:hover{transform:scale(1.05)}
-    .avatar-container img{width:100%;height:100%;object-fit:cover}
+    .avatar-container img{width:100%;height:100%;object-fit:cover;display:block}
     
     h2{font-size:2rem;margin-bottom:30px;color:var(--primary)}
     p{font-size:1.1rem;line-height:1.6;margin:20px 0}
@@ -69,8 +69,8 @@
       <div class="typing" id="typingText"></div>
     </section>
 
-    <section class="-section">
-      <div class="-container">
+    <section class="avatar-section">
+      <div class="avatar-container">
         <img src="avatar.png" alt="FABgaming Avatar">
       </div>
     </section>
