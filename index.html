@@ -256,6 +256,78 @@
       margin-top:40px;
     }
     
+    /* Terms & Conditions Styles */
+    .terms-container {
+      background: var(--card);
+      padding: 40px;
+      border-radius: 16px;
+      margin-top: 30px;
+      border: 1px solid rgba(0,245,255,0.2);
+      box-shadow: 0 10px 40px rgba(0,245,255,0.1);
+    }
+    
+    .terms-section {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .terms-section:last-child {
+      border-bottom: none;
+    }
+    
+    .terms-section h3 {
+      color: var(--cyan);
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .terms-section p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    
+    .terms-section ul {
+      padding-left: 20px;
+    }
+    
+    .terms-section li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    
+    .payment-notice {
+      background: linear-gradient(135deg, rgba(255,0,110,0.1), rgba(0,245,255,0.1));
+      border-left: 4px solid var(--pink);
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-weight: 600;
+    }
+    
+    .payment-notice.highlight {
+      background: linear-gradient(135deg, rgba(255,0,110,0.15), rgba(255,107,53,0.1));
+      border-left: 4px solid var(--orange);
+      font-size: 1.1rem;
+    }
+    
+    .rule-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      color: white;
+      border-radius: 50%;
+      font-size: 0.9rem;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    
     #mobileNavBtn{display:none}
     
     @media (max-width:768px){
@@ -264,6 +336,7 @@
       .nav-links{display:none}
       #mobileNavBtn{display:block}
       h2{font-size:2rem}
+      .terms-container {padding: 25px;}
     }
   </style>
 </head>
@@ -281,6 +354,7 @@
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
+      <a href="#terms">Terms</a>
     </nav>
     <button id="themeToggle">🌙</button>
   </header>
@@ -383,6 +457,101 @@
         <div style="display:flex;align-items:center;gap:12px">
           <span style="font-size:1.4rem">💬</span>
           <span style="font-size:1.4rem;font-weight:600;background:linear-gradient(135deg, var(--cyan), var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">fabgaming.exe</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="terms">
+      <h2>Terms & Conditions</h2>
+      <div class="terms-container">
+        <div class="terms-section">
+          <h3><span class="rule-number">1</span> My Work Stays My Work</h3>
+          <ul>
+            <li>Everything in this portfolio is made by me.</li>
+            <li>Don't copy, steal, or use anything from my portfolio without permission.</li>
+          </ul>
+        </div>
+        
+        <div class="terms-section">
+          <h3><span class="rule-number">2</span> Commission Rules</h3>
+          <ul>
+            <li>I can show the work I make for you in my portfolio unless we both agree not to.</li>
+            <li>You get full use of the asset only after full payment is completed.</li>
+          </ul>
+        </div>
+        
+        <div class="terms-section">
+          <h3><span class="rule-number">3</span> Payment Policy</h3>
+          <ul>
+            <li>Payments are final once work has started.</li>
+            <li>Refunds will only be considered if I haven't begun working or in special cases we both agree on.</li>
+          </ul>
+        </div>
+        
+        <div class="terms-section">
+          <h3><span class="rule-number">4</span> Upfront Payment for GFX & Music Services</h3>
+          <div class="payment-notice highlight">
+            <p>⚠️ Due to past scam experiences, <strong>graphics design and music composing services require a 50% upfront payment</strong> before any work begins.</p>
+            <p>Remaining payment must be completed before final delivery.</p>
+          </div>
+        </div>
+        
+        <div class="terms-section">
+          <h3><span class="rule-number">5</span> Asset Usage</h3>
+          <ul>
+            <li>Assets I create are only for the project you paid for.</li>
+            <li>You can't sell, leak, or share them with others.</li>
+          </ul>
+        </div>
+        
+        <div class="terms-section">
+          <h3><span class="rule-number">6</span> Revisions</h3>
+          <ul>
+            <li>Small changes are allowed within the limit we agree on.</li>
+            <li>Major changes after delivery may require extra payment.</li>
+          </ul>
+        </div>
+        
+        <div class="terms-section">
+          <h3><span class="rule-number">7</span> Communication</h3>
+          <ul>
+            <li>Clear instructions must be given before I start work.</li>
+            <li>Respectful communication is required at all times.</li>
+          </ul>
+        </div>
+        
+        <div class="terms-section">
+          <h3><span class="rule-number">8</span> Confidential Projects</h3>
+          <ul>
+            <li>If your project is secret, just tell me and I won't share anything publicly.</li>
+          </ul>
+        </div>
+        
+        <div class="terms-section">
+          <h3><span class="rule-number">9</span> After Delivery</h3>
+          <ul>
+            <li>I'm not responsible for issues that happen in your game later, like bugs or moderation problems.</li>
+            <li>Additional help or updates might cost extra.</li>
+          </ul>
+        </div>
+        
+        <div class="terms-section">
+          <h3><span class="rule-number">10</span> Timeline</h3>
+          <ul>
+            <li>I will try my best to finish on time.</li>
+            <li>Deadlines may change if I don't receive needed information or there are other delays beyond my control.</li>
+          </ul>
+        </div>
+        
+        <div class="terms-section">
+          <h3><span class="rule-number">11</span> Updates to These Rules</h3>
+          <ul>
+            <li>I can update these Terms when needed, and new rules apply from that point forward.</li>
+          </ul>
+        </div>
+        
+        <div class="payment-notice">
+          <p>By commissioning my services, you agree to these terms and conditions. I reserve the right to refuse service to anyone at my discretion.</p>
         </div>
       </div>
     </section>
@@ -498,7 +667,7 @@
     
     var mobileNav = document.createElement('div');
     mobileNav.style.cssText = 'position:fixed;top:0;right:-100%;width:70%;height:100%;background:var(--card);padding:80px 30px;transition:right .4s;z-index:100;border-left:1px solid rgba(0,245,255,0.2)';
-    mobileNav.innerHTML = '<h3 style="color:var(--cyan)">Menu</h3><p><a href="#about" style="color:var(--text);text-decoration:none;font-size:1.1rem">About</a></p><p><a href="#skills" style="color:var(--text);text-decoration:none;font-size:1.1rem">Skills</a></p><p><a href="#projects" style="color:var(--text);text-decoration:none;font-size:1.1rem">Projects</a></p><p><a href="#contact" style="color:var(--text);text-decoration:none;font-size:1.1rem">Contact</a></p>';
+    mobileNav.innerHTML = '<h3 style="color:var(--cyan)">Menu</h3><p><a href="#about" style="color:var(--text);text-decoration:none;font-size:1.1rem">About</a></p><p><a href="#skills" style="color:var(--text);text-decoration:none;font-size:1.1rem">Skills</a></p><p><a href="#projects" style="color:var(--text);text-decoration:none;font-size:1.1rem">Projects</a></p><p><a href="#contact" style="color:var(--text);text-decoration:none;font-size:1.1rem">Contact</a></p><p><a href="#terms" style="color:var(--text);text-decoration:none;font-size:1.1rem">Terms</a></p>';
     document.body.appendChild(mobileNav);
     
     navBtn.addEventListener('click', function(){
